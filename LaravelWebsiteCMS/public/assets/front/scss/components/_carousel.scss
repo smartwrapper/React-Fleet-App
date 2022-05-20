@@ -1,0 +1,109 @@
+ //....................carousel section...............
+
+ .carousel-content{
+//    min-height: 410px;   
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                height: 410px;
+                overflow: hidden;
+                img{
+                   object-fit: cover;
+                   height: 100%;
+                   width: 100%;    
+                }
+               
+                .position {
+                    &-left {
+                        justify-content: flex-start;
+                    }
+                    &-center {
+                        justify-content: center;
+                    }
+                    &-right {
+                        justify-content: flex-end;
+                    }
+                  }
+                  .textcontent {
+                    &-left {
+                        text-align: left;
+                    }
+                    &-center {
+                        text-align: center;
+                    }
+                    &-right {
+                        text-align: right;
+                    }
+                  }
+                  .text{
+                      &-black{
+                         h2,p{
+                            color: #000;
+                         }
+                      }
+                      &-white{
+                          h2,p{
+                            color: #fff;
+                          }
+                      }
+                  }
+                .carousel-caption {
+                    bottom: 100px !important;
+
+                    h2{
+                        font-size: 2.75rem !important;
+                      
+                    }
+                    p{
+                        font-size: 1.75rem !important;
+                       
+                    }
+                }
+            }
+        }
+        .carousel-control-prev{
+            left: 15px;            
+        }
+        .carousel-control-next{
+            right: 15px;
+        }
+        a{
+            // transform: translateY(-50%);
+            // top: 45%;
+            // font-size: 25px;
+            // background-color: #949497;
+            // height: 38px;
+            // width: 38px;
+            // border: 1px solid #ced4da;
+            // border-radius: 0px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+        .carousel-inner{
+            .carousel-item{
+                height: 250px !important;
+                img{
+                   object-fit: cover !important;
+                    width: 100% !important;
+                    
+                
+                }
+            }
+        }
+    }   
+
+    @media screen and (max-width:500px){
+        .carousel-inner{
+            .carousel-item{
+                height: 180px !important;
+                img{
+                   object-fit: cover !important;
+                    width: 100% !important;
+                    
+                
+                }
+            }
+        }
+    }

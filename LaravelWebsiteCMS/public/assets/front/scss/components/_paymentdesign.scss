@@ -1,0 +1,43 @@
+.paymentcard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 20px;
+    background-color: $bodycard;
+    padding: 50px;
+    word-wrap: break-word;
+    img{
+        width: 250px;
+    }
+    h3{
+        margin: 50px 0;
+        color: $body-bg-secondary;
+    }
+    .formpaytree{
+        margin-bottom: 30px;
+        p{
+            color: $body-bg-secondary;
+            margin-bottom: 15px;
+        }
+        input{
+            margin-bottom: 20px;
+            font-family: $font-family-base-bold;
+            color: $body-color;
+            font-size: $font-size-lg;
+            text-align: center;
+            &::placeholder{
+                color: $body-bg-secondary;
+                font-family: $font-family-base-bold;
+            }
+        }
+    }
+} 
+
+@media screen and (max-width:576px){
+    .paymentcard{
+        padding: 15px;
+    }
+}

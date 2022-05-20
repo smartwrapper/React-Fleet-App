@@ -1,0 +1,16 @@
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/vcodertest/public_html/rawal-dev
+        - /bin/cp -r * $DEPLOYPATH
+
+        - export DEPLOYPATH=/home/vcodertest/public_html/rawal-demos/electronics
+        - /bin/cp -r * $DEPLOYPATH
+
+        - export DEPLOYPATH=/home/vcodertest/public_html/rawal-demos/fashion
+        - /bin/cp -r * $DEPLOYPATH
+
+        - export DEPLOYPATH=/home/vcodertest/public_html/rawal-demos/grocery
+        - /bin/cp -r * $DEPLOYPATH
+
+        - export DEPLOYPATH=/home/vcodertest/public_html/rawal-demos/market
+        - /bin/cp -r * $DEPLOYPATH

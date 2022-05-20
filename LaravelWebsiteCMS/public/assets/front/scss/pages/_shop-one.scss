@@ -1,0 +1,463 @@
+$bg-top-bar:  $primary-dark;
+$select-form:$gray-500;
+
+.shop-content{
+    .list-group {
+        display: block;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        
+        .list-group-item:first-child{
+            
+            &:before{
+                display: none;
+            }
+        }
+
+        .list-group-item{
+            float: left;
+            font-size: 0.875rem;
+            background-color: transparent;
+            border:none;
+            margin-right: 10px;
+
+            a{
+                text-decoration: none;
+            }
+
+            &.active{
+                color:$secondary;
+            }
+            &:before{
+                display: inline-block;
+                padding-right: 0.5rem;
+                color: #6c757d;
+                content: ">";
+            }
+        }
+        
+    }
+    .list-group.end{
+        float: right;
+        .list-group-item{
+            font-weight: $font-weight-bold;
+        }
+    }
+
+  
+  
+}
+.shop-content{
+    .listing{
+        .product{
+            article{
+                display: flex;
+                background-color: white;
+                .thumb{
+
+                    width:32%;
+              
+                }
+                .content{
+                    width:67%;
+                    .expand-detail{
+                        display: block;
+                        line-height: 1.5;
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        p{
+                            display: block;
+                        
+                        }
+                    }
+                    .p-left{
+                        text-align: left;
+                    }
+                 
+                }
+                .product-dis{
+                    margin-left: 30px;
+                }
+
+              
+                .tag{
+                    display: block;
+                    padding: 0;
+                    text-align: left;
+                }
+                .discription{
+                    display: block;
+                }  
+                .title{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+               
+                .price{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-center;
+                }
+                .listing-btn{
+                    display: flex;
+                    padding-bottom: 10px;
+                }
+                .listview-btn{
+                    display: block;
+                    margin-left: 55px;
+                }
+                
+            }
+         
+        }
+    }
+}
+.shop-content.shop-topbar{
+    .listing{
+        .product{
+            article{
+                .thumb{
+                    width:25%;
+                }
+                .content{
+                    width:75%;
+                    .btn-hover{
+                        display: none;
+                    }
+                    .listing-none{
+                        display: inline-block;
+                        
+                    }
+                    .f-left{
+                        float: left;
+                       
+                    }
+                    .f-start{
+                        justify-content: flex-start;
+                    }
+                }
+                
+            }
+         
+        }
+    }
+}
+
+// copy of new cards
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product2{
+            article{
+                display: flex;
+                background-color: white;
+                .pro-thumb{
+                    width:23%;
+                    .icons{
+                        .displayy-none{
+                            display: none;
+                        }
+                        .listing-none{
+                            display: inline-block !important;
+                            
+                        }
+                    }
+                }
+                .content{
+                    width:75%;
+                    
+                    .listing-none{
+                        display: inline-block;
+                        
+                    }
+                    .f-left{
+                        float: left;
+                       
+                    }
+                    .f-start{
+                        justify-content: flex-start;
+                    }
+                    .display-none{
+                        display: none !important;
+                    }
+                    .para{
+                        display: block;
+                    }
+                }
+                
+            }
+         
+        }
+    }
+}
+
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product3 .content{
+            .para{
+                display: block;
+            }
+        } 
+    }
+}
+
+// product card 3
+
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product4.product .content{
+            .para{
+                display: block;
+            }
+        } .product-action .listing-none{
+            display: none !important;
+        }
+    }
+}
+
+// product card 5
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product5 article .content
+        .para{
+            display: block;
+            text-align: left;
+        }
+         .start-button{
+            display: flex;
+            justify-content: flex-start;
+         }
+    }
+}
+// product card 6
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product6 article button{
+            display: none;
+        }
+        .content{
+            button{
+                display: inline-block !important;
+            }
+            .para{
+                display: block;
+            }
+        }
+    }
+}
+// product card 7
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product7 article .productdetail {
+            display: flex;
+            width: 100%;
+            .thumb{
+                width: 25%;
+            }
+            button{
+                display:none;
+            }
+        }
+        .content{
+            button{
+            
+                display: inline-block !important;
+            }
+            .para{
+                display: block;
+            }
+        }
+    }
+}
+
+
+// product card 8
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product12 article .content{
+            .para{
+                display: block;
+            }
+        }
+    }
+}
+// product card 9
+
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product12 article .content{
+            .para{
+                display: block;
+                text-align: left;
+            }
+        }
+        .pro-counter{
+            justify-content: start !important;
+        }
+    }
+}
+
+// card ten
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product2.product10 article .content .pricetag button{
+            
+            display: none !important;
+        
+        }
+    }
+}
+// product card 11
+// card ten
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product9 article.content{
+            .para{
+                display: block;
+            }
+        }
+    }
+}
+// card twelve
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product12.ratingstar article .content{
+            button{
+                float: left;
+            }
+            .rating-none{
+                display: none;
+            }
+            .f-left{
+                float: left;
+            }
+            .listing-none{
+                display: table-cell;
+            }
+        } 
+    }
+}
+
+// card thirteen 
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product9.ratingstar article .content {
+            .price-none{
+                display: none !important;
+            }
+            .pro-rating{
+                justify-content: flex-start;
+            }
+            .listing-none{
+                display: inline-block;
+            }
+            .pricetag{
+                .pro-rating{          
+                    display: none !important;
+                }
+            } 
+        }
+    }
+}
+
+// card fourteen
+
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product14.ratingstar article {
+            .content{
+                .pro-rating{
+                    justify-content: flex-start;
+                }
+                .para{
+                    display: block;
+                }
+            }
+            .product-action{
+                display: none;
+            }
+        }
+        
+    }
+}
+
+// card fifteen
+
+
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product9 article {
+            .pricetag a{
+                display: none;
+            }
+            .listing-none{
+                display: inline-block !important;
+                display: flex !important;
+            }
+        }
+        
+    }
+}
+
+
+// card sixteen
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product11 article .content{
+            .para{
+                display: block;
+            }
+        }
+    }
+}
+
+
+// card Eighteen
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product13.ratingstar article .content{
+            .para{
+                display: block;
+            }
+            .listing1-show{
+                display: inline-block !important;
+            }
+            .rating-none{
+                display: none;
+            }
+            .pro-rating{
+                justify-content: flex-start;
+                
+            }
+        }
+        
+    }
+}
+
+// card ninghteen
+.shop-content.shop-topbar.shop-one{
+    .listing{
+        .product.product14.ratingstar article .content{
+            .listing-none{
+                display: inline-block !important;
+            }
+            .icons-none{
+                display: none;
+            }
+            .price-none{
+                display: none;
+            }
+            .rating-none{
+                display: none;
+            }
+            .tag-none{
+                display: none;
+            }
+        }
+        
+    }
+}
